@@ -110,19 +110,19 @@ class GroqModel:
                 return response_formatted
 
 
-if __name__ == "__main__":
-    groq_model = GroqModel()
-    messages = [
-        {
-            "role": "system", 
-            "content": """
-            You are a reporter. You will be presented with a webpage containing information relevant to the research question.
-"""
-        },
-        {
-            "role": "user",
-            "content": "question what is LLM ?"
-        }
-    ]
-    result = groq_model.invoke(messages)
-    print(result.content)
+# if __name__ == "__main__":
+#     groq_model = GroqModel()
+#     messages = [
+#         {
+#             "role": "system", 
+#             "content": """
+#             You are a reporter. You will be presented with a webpage containing information relevant to the research question.
+# """
+#         },
+#         {
+#             "role": "user",
+#             "content": "question what is LLM ?"
+#         }
+#     ]
+#     result = groq_model.invoke(messages)
+#     print(result.content)
